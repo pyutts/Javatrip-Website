@@ -1,0 +1,655 @@
+:root {
+    --warna-utama: #FCA203;
+    --warna-kedua: #000;
+    --warna-ketiga:#ffffff;
+    --warna-gradient:rgba(252, 162, 3, 0.4);
+    --warna-gradient-black:rgba(0, 0, 0, 0.322);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    transition: all .2s ease-in-out;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+}
+
+/* NAVBAR MENU */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    transition: all .2s ease;
+}
+
+.konten-menu {
+    margin: auto;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.konten-menu img {
+    width: 100%;
+    max-width: 230px;
+    margin-left: 40px;
+    transform: scale(0.8);
+}
+
+
+.menu {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    width: auto; 
+    position: absolute; 
+    top: 5px; 
+    right: 70px; 
+    bottom: 0;
+}
+
+.menu a {
+    color: var(--warna-kedua);
+    font-weight: 500;
+    margin-inline: 20px;
+    font-family: 'Poppins';
+}
+
+.menu a:hover {
+    color: var(--warna-utama);
+    transition: color .2s ease-in-out;
+    
+}
+
+#login {
+    background-color: var(--warna-utama);
+    color: #fff;
+    padding: 10px 55px;
+    border-radius: 35px;
+    font-size: 15px;
+}
+
+#login:hover {
+    transform: scale(0.95);
+    transition: all .3s ease-in-out;
+    color: #000;
+}
+
+
+/* HERO DEPAN */
+.hero {
+    position: relative;
+    padding-top: 100px;
+}
+
+.deskripsi {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; 
+    color: #fff;
+    text-align: center;
+    width: 100%; 
+}
+
+.hero h2,
+.hero p {
+    position: relative; 
+    text-align: center;
+    z-index: 1;
+    color: #fff;
+    font-family: 'Poppins';
+    text-shadow: 0 10px 40px rgba(0, 0, 0, 0.452);
+}
+
+.hero h2 {
+    font-size: 80px;
+    margin-top: 35%; 
+}
+
+.hero p {
+    font-size: 50px;
+    margin-top: -25px; 
+    border-bottom: 4px solid #FCA203;
+    width: 27%;
+}
+
+
+/* Slider Gambar */
+
+#slider {
+    width: 100%;
+    height: 600px;  
+}
+
+.slides {
+    width: 400%;
+    right: 300%;
+    height: 100%;
+    position: relative;
+    -webkit-animation: slide 20s infinite;
+    -moz-animation: slide 20s infinite;
+    animation: slide 20s infinite;
+}
+
+.slider {
+    width: 25%;
+    height: 100%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+   
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Animasi Slider */
+@-webkit-keyframes slide{
+  0%,100%{
+    margin-left:0%;
+  }
+  21%{
+    margin-left:0%;
+  }
+  25%{
+    margin-left:100%;
+  }
+  46%{
+    margin-left:100%;
+  }
+  50%{
+    margin-left:200%;
+  }
+  71%{
+    margin-left:200%;
+  }
+  75%{
+    margin-left:300%;
+  }
+  96%{
+    margin-left:300%;
+  }
+}
+@-moz-keyframes slide{
+  0%,100%{
+    margin-left:0%;
+  }
+  21%{
+    margin-left:0%;
+  }
+  25%{
+    margin-left:100%;
+  }
+  46%{
+    margin-left:100%;
+  }
+  50%{
+    margin-left:200%;
+  }
+  71%{
+    margin-left:200%;
+  }
+  75%{
+    margin-left:300%;
+  }
+  96%{
+    margin-left:300%;
+  }
+}
+@keyframes slide{
+  0%,100%{
+    margin-left:0%;
+  }
+  21%{
+    margin-left:0%;
+  }
+  25%{
+    margin-left:100%;
+  }
+  46%{
+    margin-left:100%;
+  }
+  50%{
+    margin-left:200%;
+  }
+  71%{
+    margin-left:200%;
+  }
+  75%{
+    margin-left:300%;
+  }
+  96%{
+    margin-left:300%;
+  }
+}
+
+/* Konten Kotak 3 */
+.konten-kotak {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.konten-kotak p{
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #FCA203;
+    padding: 10px 50px;
+}
+
+.bungkus-konten {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -55px;
+}
+
+.img-konten {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 10px;
+}
+
+.img-konten img {
+    background-color: #ffffff;
+    border-radius: 20px;
+    margin-right: 60px;
+    margin-left: 60px;
+    padding: 30px 60px;
+    box-shadow: 0 15px 20px rgba(252, 162, 3, 0.1);
+    transform: scale(0.8);
+    transform-origin: center; 
+}
+
+
+/* TENTANG KAMI */
+
+.konten1 h1 {
+    display: block;
+    margin-top: 10%;
+    margin-bottom: 10rem;
+    text-align: center;
+    border-bottom: 4px solid #FCA203;
+    width: 18%;
+    position: relative; 
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+
+.konten-utama {
+    width: 100%; 
+    margin: auto;
+}
+
+.konten2 {
+    display: block;
+    width :40%;
+    margin: 20px;
+    margin-left:50%;
+}
+
+.konten2 p{
+    font-size: 20px ;
+    text-align:justify;
+} 
+
+.konten3{
+    display: block;
+    margin-top: -6.5%;
+    margin-left: 15%;
+} 
+
+ .konten3 img{
+    transform: scale(160%);
+}
+
+/* PILIHAN WISATA */
+
+.destinasi h1{
+    display: block;
+    margin-top: 10%;
+    margin-bottom: -70px;
+    text-align: center;
+    border-bottom: 4px solid #FCA203;
+    width: 18%;
+    position: relative; 
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+
+.destinasi li{
+    display: block;
+    font-size: 20px;
+    margin-top: 5%;
+    text-align: center;
+    position: relative; 
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+
+.kotak-kartu{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+    
+.kartu{
+    width: 25%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 15px 20px rgba(252, 162, 3, 0.1);
+    margin: 50px;
+}
+    
+.kartu img{
+    width:100%;
+    height: auto;
+}
+    
+.konten-kartu{ 
+    padding:10px;
+    text-align: justify;
+    padding: 0 30px;
+}
+    
+.konten-kartu h3{
+    font-size: 28px;
+    margin-top: 10px;
+} I
+
+    
+.konten-kartu p{
+    color:#666;
+    font-size: 15px;
+    Line-height: 1.5;
+}
+    
+
+.konten-kartu .tombol{
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: var(--warna-utama);
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 16px;
+    color:var(--warna-kedua); 
+}
+
+.konten-kartu .tombol:hover{
+    transform: scale(0.95);
+    transition: all .3s ease-in-out;
+    color:var(--warna-ketiga);
+}
+
+/* PILIHAN PAKET */
+
+.kotak-kartu-paket{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    width: 90%;
+    margin: auto;
+}
+
+.paket-text h1{
+    display: block;
+    margin-top: 10%;
+    margin-bottom: -80px;
+    text-align: center;
+    border-bottom: 4px solid #FCA203;
+    width: 18%;
+    position: relative; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    
+}
+
+.paket-text li{
+    display: block;
+    font-size: 20px;
+    margin-top: 5%;
+    text-align: center;
+    position: relative; 
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+
+.paket-kartu {
+    box-shadow: 0 15px 20px rgba(252, 162, 3, 0.1);
+    background-color: var(--warna-ketiga);
+    width: 20%;
+    margin: auto;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.paket-kartu img {
+    width:100%;
+    height: auto;
+}
+
+.harga {
+    color: grey;
+    font-size: 22px;
+}
+  
+.paket-kartu button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    background-color: var(--warna-utama);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+  
+.paket-kartu a{
+    color: var(--warna-kedua);
+}
+
+.paket-kartu button:hover {
+    opacity: 0.7;
+}
+
+/* FOOTER */
+
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #FCA203;
+    padding: 40px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: var(--warna-kedua);
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: var(--warna-kedua);
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: var(--warna-kedua);
+	text-decoration: none;
+	font-weight: 300;
+	color: var(--warna-kedua);
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: var(--warna-kedua);
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+.copyright{
+    border-top: 1px solid var(--warna-kedua);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    padding: auto;
+    margin-top: 5%;
+    color: var(--warna-kedua);
+}
+
+.copyright p{
+    margin-top: 20px;
+}
+
+/*responsivenya footer*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+/* Pop UP Destinasi Wisata */
+  
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay:target {
+    display: flex;
+}
+
+.popup {
+    margin-top: auto;
+    margin-bottom: 23px;
+    padding: 20px ;
+    background: #fff;
+    border-radius: 5px;
+    width: 90%;
+    max-width: 60rem; 
+    position: relative;
+}
+
+.popup h2 {
+    margin-top: 20px; 
+    color: #333;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .close:hover {
+    color: #ff0000;
+}
+
+.popup .content {
+    width: 100%;
+    max-height: 50vh; 
+    overflow-y: auto;
+    max-height: 40rem;
+}
+
+.popup .content img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive Pop UP */
+@media screen and (max-width: 700px) {
+    .popup {
+        width: 90%;
+    }
+}
+
