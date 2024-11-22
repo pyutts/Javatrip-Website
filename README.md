@@ -1,6 +1,6 @@
 # Website Jasa Trip
 
-![Logo Jasa Trip](assets/images/logo.png)
+![Logo Jasa Trip](img/logojavtrip.png)
 
 Website ini adalah proyek sederhana yang dikembangkan menggunakan **HTML** dan **CSS** untuk menampilkan layanan jasa perjalanan wisata. Website ini dirancang agar menarik, responsif, dan mudah digunakan, sehingga pelanggan dapat dengan cepat menemukan informasi tentang destinasi wisata, paket perjalanan, dan cara pemesanan.
 
@@ -14,15 +14,6 @@ Website ini adalah proyek sederhana yang dikembangkan menggunakan **HTML** dan *
 4. **Tentang Kami**: Profil perusahaan dan misi kami dalam memberikan pengalaman terbaik untuk pelanggan.
 5. **Kontak**: Formulir pemesanan, informasi kontak, dan tautan ke media sosial.
 
----
-
-## Tampilan Website
-
-### **Beranda**
-![Beranda Website](assets/images/beranda.jpg)
-
-### **Destinasi Populer**
-![Destinasi Populer](assets/images/destinasi1.jpg)
 
 ---
 
@@ -30,4 +21,4 @@ Website ini adalah proyek sederhana yang dikembangkan menggunakan **HTML** dan *
 
 1. Clone repositori ini ke komputer Anda:
    ```bash
-   git clone https://github.com/username/jasa-trip.git
+   git clone https://github.com/pyutts/Javatrip-Website.git
